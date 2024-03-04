@@ -1,0 +1,24 @@
+/* Find  the top five most popular names and their counts  for male*/
+SELECT
+  name,
+  count
+FROM
+  your-project.babynames.names_2014
+WHERE
+  gender = 'M'
+ORDER BY
+  count DESC
+LIMIT
+  5
+/* Find  the top five most popular names and their counts  for Female*/
+SELECT
+  name,
+  count
+FROM
+  your-project.babynames.names_2014
+WHERE
+  gender = 'F'
+ORDER BY
+  count DESC
+LIMIT
+  5
